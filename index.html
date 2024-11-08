@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Giftoria</title>
+    <style>
+        body{
+            max-width: 740px;
+            margin: 0.5em auto 0em auto;
+            font-family: 'Roboto', sans-serif;
+        }
+        table{
+            width: 70%;
+            border: 1px solid rgba(53, 52, 52, 0.055);
+            overflow: hidden;
+            margin: auto;
+            border-spacing: 0px;
+        }
+        th img{
+            width: 100%;
+        }
+        h1{
+            font-size: 16px;
+            text-align: center;
+            margin-top: -2.4em;
+            color: green;
+            font-weight: 900;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        h2{
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 1.4em;
+            margin-left: 19px;
+            color: rgb(71, 68, 68);
+        }
+        .main-2 p{
+            margin-left: 12px;
+            font-size: 16px;
+            color: #1f1414;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+        .img-1{
+            width: 26px;
+        }
+        .img-1:hover{
+            transform: rotate(29deg);
+            cursor: pointer;
+        }
+        .main-2 button{
+            display: block;
+            width: 9em;
+            height: 2em;
+            margin: auto;
+            border-radius: 6px;
+            border:0.5px solid rgba(0, 0, 0, 0.37);
+            transition: all 1.04s 0s ease;
+            background-color: rgba(212, 36, 36, 0.945);/*background-color: rgb(212, 36, 36);*/
+            box-shadow: 1px 0px 0px 2px rgba(85, 82, 82, 0.164);
+        }
+        .main-2 button a{
+            text-decoration: none;
+            word-spacing: 2px;
+            font-size: medium;
+            font-weight: bolder;
+            color: rgba(0, 0, 0, 0.904);
+            transition: all 1.4s 0s ease;
+        }
+        .main-2 button:hover{
+            transform: scale(1.02);
+        }
+        .main-2 button a:hover{
+            color: aliceblue;
+        }
+        .footer{
+            background-color: rgba(173, 169, 169, 0.13);
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .footer p{
+           margin: auto;
+           text-align: center;
+           font-size: 13px;
+           line-height: 1.6;
+           color: #221f1f;
+        }
+        .footer p i{
+            font-size: 19px;
+        }
+        .footer p i:focus{
+            color: rgba(11, 11, 107, 0.603);
+        }
+        .footer p a{
+            text-decoration: none;
+            color: rgba(3, 3, 97, 0.918);
+        }
+        .footer p a:hover{
+            text-decoration: underline;
+        }
+        .footer p a:focus{
+            color: rgba(3, 3, 97, 0.747);
+        }
+        /*mobile*/
+        @media (max-width: 600px){
+            body{
+                width: 100%;
+                margin: auto;
+                overflow-x: hidden;
+            }
+            table{
+                width: 100%;
+                max-width: 100%;
+            }
+            .main-2 p {
+                font-size: 15px;
+            }
+            h1{
+                font-size: 12px;
+            }
+            .img-1:focus{
+            transform: rotate(29deg);
+            cursor: pointer;
+        }
+        .main-2 button:focus{
+            transform: scale(1);
+        }
+        .main-2 button a:focus{
+            color: aliceblue;
+        }
+        }
+        /*ipads*/
+        @media (min-width: 600px) and (max-width: 1024px) {
+          body{
+            max-width: 100%;
+          }  
+          table{
+            width: 85%;
+            max-width: 85%;
+          }
+          h1{
+            font-size: 17px;
+          }
+          .main-2 p{
+            font-size: 18px;
+          }
+          .main-2 button:focus{
+            transform: scale(1);
+        }
+        .main-2 button a:focus{
+            color: aliceblue;
+        }
+        .img-1:focus{
+            transform: rotate(29deg);
+            cursor: pointer;
+        }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!--header-->
+        <tr class="header">
+            <th>
+                <img src="https://img.freepik.com/premium-vector/hand-drawn-merry-christmas-decorative-background-design-items-are-arc-from_638892-1424.jpg" alt="christmas image">
+            </th>
+        </tr>
+        <!--main-->
+        <tr class="main-1">
+            <td>
+                <h1>🎁 Enjoy a Free Gift with Every Purchase – Only at Giftoria!</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="main-2">
+                <h2>Hello There,</h2>
+                <p>
+                    At Giftoria, we’re celebrating the holiday spirit by adding a little something extra to every order! For a limited time, each purchase comes with a free holiday gift — our way of saying thank you.
+                </p>
+                <p>
+                    Whether it’s a charming holiday card, a sample of a new product, or a delightful surprise, this special treat will make your holiday shopping even more magical.
+                </p>
+                <p>
+                    Shop now and unwrap a surprise with each item you select! <img src="imgs/santa-hat.png" alt="sanata hat image" class="img-1"> 
+                </p>
+                
+                <button><a href="#">Shop Now!</a></button>
+                <p>
+                    Warm regards,
+The Giftoria Team
+                </p>
+                <p>
+                    P.S. Don’t wait! This offer is available only while supplies last.
+                </p>
+            </td>
+        </tr>
+        <!--footer-->
+        <tr class="footer">
+            <td>
+                <p style="padding-top: 5px;">Morocco,Casablanca</p>
+                <p>Giftoria.support@gmail.com</p>
+                <p>Follow us: <a href="#"><i class='bx bxl-instagram'></i></a>  <a href="#"><i class='bx bxl-facebook' ></i></a>  <a href="#"> <i class='bx bxl-twitter'></i> </a></p>
+                <p> <a href="#">WWW.Giftoria.com</a> </p>
+                <p> <a href="#">To unsubscribe</a> </p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
